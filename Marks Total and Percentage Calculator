@@ -1,0 +1,37 @@
+import java.util.*;
+class Marks_Total_and_Percentage_Calculator
+{
+    public static void main(String[] args)
+    {
+        Scanner x=new Scanner(System.in);
+        System.out.println("Enter the number of subjects");
+        int subjects=x.nextInt();
+        
+        System.out.println("Enter the marks for the subjects");
+        
+        int total=0;
+        
+        for(int i = 1; i <= subjects; i++) 
+        {
+            System.out.print("Enter marks for subject " + i + ": ");
+            int marks = x.nextInt();
+
+            if(marks < 0 || marks > 100) 
+            {
+                   System.out.println("Invalid marks entered!");
+                   i--; // repeat this subject
+                   continue;
+            }
+
+            total += marks;
+        }
+        
+        double percentage = total/subjects;
+        // first round by adding 2 decimal places then shift back 2 decimal places
+        double round = (percentage*100.0)/100.0;
+        
+        System.out.println("Total marks = "+total);
+        
+        System.out.println("Percentage = "+round+"%");
+    }
+}

@@ -1,0 +1,71 @@
+import java.util.*;
+class Grade_Analyzer
+{
+    public static void main(String[] args)
+    {
+        Scanner x=new Scanner(System.in);
+        System.out.println("Enter the number of subjects");
+        int subjects=x.nextInt();
+        
+        System.out.println("Enter the marks for the subjects");
+        
+        double total=0;
+        
+        for(int i = 1; i <= subjects; i++) 
+        {
+            System.out.print("Enter marks for subject " + i + ": ");
+            int marks = x.nextInt();
+
+            if(marks < 0 || marks > 100) 
+            {
+                   System.out.println("Invalid marks entered!");
+                   i--; // repeat this subject
+                   continue;
+            }
+
+            total += marks;
+        }
+        
+        double percentage = total/subjects;
+        percentage = Math.round(percentage*100.0)/100.0;
+        
+        
+        System.out.println("Total marks = "+total);
+        
+        System.out.println("Percentage = "+percentage+"%");
+        
+        String grade = "F";
+        
+        if(percentage>=90)
+        {
+            grade = "A+";
+            System.out.println("Grade = "+grade+" Congratulations! you performed your best ;)");
+        }
+        else if(percentage>=80)
+        {
+            grade = "A";
+            System.out.println("Grade = "+grade+" Congratulations! you did very well :)");
+        }
+        else if(percentage>=70)
+        {
+            grade = "B";
+            System.out.println("Grade = "+grade+" Your almost there |;>|");
+        }
+        else if(percentage>=60)
+        {
+            grade = "C";
+            System.out.println("Grade = "+grade+" you have potential |'_'|");
+        }
+        else if(percentage>=50)
+        {
+            grade = "D";
+            System.out.println("Grade = "+grade+" you can do better :( ");
+        }
+        else
+        {
+            System.out.println("Grade = "+grade+" FAILED!!! *_*");
+        }
+        
+        x.close();
+    }
+}

@@ -1,53 +1,75 @@
 # Student Management System (Java)
 
-A console-based Java project that performs student-related academic calculations.
+A collection of console-based Java programs that simulate basic student academic calculations and analysis.
 
-## 📌 Overview
+## 📌 Project Overview
 
-This repository contains Java programs that:
+This repository contains Java programs designed to perform common student-related academic operations such as calculating percentages, analyzing grades, and processing results for multiple students.
 
-- Calculate student percentage
-- Compute average marks
-- Assign grades automatically
-- Validate user input (0–100)
-- Display formatted results
+The purpose of this project is to practice core programming concepts while gradually building a structured student analysis system using Java.
 
 ## 🚀 Current Programs
 
 ### 1. Percentage Calculator
-Calculates total marks and percentage based on user input.
+
+Calculates the total marks and percentage based on marks entered for multiple subjects.
 
 ### 2. Grade Analyzer
-Calculates average marks and assigns grades based on performance.
+
+Calculates the average marks of a student and assigns a grade based on performance.
+
+### 3. Multi-Student Grade Analyzer
+
+Analyzes multiple students with different numbers of subjects, calculates total marks, percentage, and assigns grades for each student.
 
 ## ✨ Features
 
-- Dynamic number of subjects
-- Input validation
-- Automatic grade assignment
-- Rounded average (2 decimal places)
-- Clean console-based output
+* Dynamic number of subjects
+* Multi-student support
+* Input validation (marks must be between 0 and 100)
+* Automatic grade assignment
+* Rounded percentage output
+* Clean and structured console output
 
 ## ▶ How to Run
 
-Compile:
+1. Compile the Java program:
+
 ```
-javac Grade_Analyzer.java
+javac FileName.java
 ```
 
-Run:
+2. Run the compiled program:
+
 ```
-java Grade_Analyzer
+java FileName
 ```
+
+Replace **FileName** with the name of the Java file you want to execute.
 
 ## 🔮 Future Improvements
 
-- Multi-student support
-- File-based data storage
-- Search functionality
-- GUI version
-- Advanced data analysis features
+Planned enhancements for this repository include:
 
----
+* Class performance analyzer (highest, lowest, and class average)
+* Student ranking system
+* Menu-driven student management system
+* File-based student data storage
+* Search functionality for student records
+* GUI-based student management system
 
-Author: Akshaj
+## 🧠 Concepts Practiced
+
+This project focuses on strengthening the following Java concepts:
+
+* Variables and data types
+* Conditional statements
+* Loops and nested loops
+* Input validation
+* Mathematical calculations
+* Structured console programs
+
+## 👨‍💻 Author
+
+Akshaj
+
